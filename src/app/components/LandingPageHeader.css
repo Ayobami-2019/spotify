@@ -1,0 +1,26 @@
+.header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color: #000000;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+    font-weight: bold;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 9px;
+}
+.sign{
+    color: #D9DADC;
+}
