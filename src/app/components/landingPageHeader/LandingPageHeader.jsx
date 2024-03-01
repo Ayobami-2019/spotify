@@ -1,5 +1,5 @@
 import './LandingPageHeader.css'
-import { Logo } from './Logo'
+import { Logo, Menu } from './LandingHeaderComp'
 // import React from 'react' class LandingPageHeaderComponent extends React.Component or import {Component} from 'react'  //used when class is to be used
 //named component with arrow function (Arrow method)
 export const LandingPageHeader=()=>{
@@ -9,27 +9,7 @@ export const LandingPageHeader=()=>{
                 <Logo useWhite={true}/>
             </div>
             <div className="menu">
-                <ul>
-                    <li>
-                        <a href="#premium">Premium</a>
-                    </li>
-                    <li>
-                        <a href="#support">Support</a>
-                    </li>
-                    <li>
-                        <a href="#download">Download</a>
-                    </li>
-                    <li>
-                        <a href="#">|</a>
-                    </li>
-                    <li className='sign'>
-                        <a href="#singup">Sign Up</a>
-                    </li>
-                    <li className='sign'>
-                        <a href="#login">Login</a>
-                    </li>
-                </ul>
-                
+                <Menu />
             </div>
         </header>
     )

@@ -1,0 +1,56 @@
+.paymentPlan{
+    background-color: #1D75DE;
+    /* height: 480px; */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+.paymentPlanIntro{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+}
+.paymentPlanIntro h1{
+    font-weight: bold;
+    font-size: 39px;
+}
+.paymentPlanIntro p{
+    font-size: 24px;
+}
+.pricingButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.pricing{
+    padding: 16px 35px;
+    border-radius: 50px;
+    gap: 15px;
+}
+
+.pricing a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+}
+.fill{
+    background-color: #000000;
+    border: none;
+    outline: none;
+}
+.no-fill{
+    border: 2px solid #ffffff;
+    background: none;
+}
+.terms{
+    font-size: 11px;
+}
+.terms a{
+    text-decoration: underline;
+}
