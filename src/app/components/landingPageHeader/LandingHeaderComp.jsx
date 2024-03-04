@@ -34,9 +34,7 @@ export const Menu=()=>{
                 <li>
                     <a href="#download">Download</a>
                 </li>
-                <li>
-                    <a href="#">|</a>
-                </li>
+                <li>|</li>
                 <li className='sign'>
                     <a href="#singup">Sign Up</a>
                 </li>

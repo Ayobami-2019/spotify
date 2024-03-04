@@ -55,6 +55,7 @@
     /* text-decoration: underline; */
     position: relative;
     z-index: 1;
+    cursor: pointer;
 }
 .terms a::after{
     content: '''';
