@@ -52,5 +52,16 @@
     font-size: 11px;
 }
 .terms a{
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    position: relative;
+    z-index: 1;
+}
+.terms a::after{
+    content: '''';
+    position: absolute;
+    width: 133.4px;
+    border-bottom: #ffffff solid 0.54px;
+    z-index: 2;
+    left: 0px;
+    top: 11px;
 }

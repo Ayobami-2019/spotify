@@ -24,7 +24,8 @@ export const Terms=()=>{
     return(
         <p className="terms">
             <a>Terms and conditions apply.</a> 
-            <span>1 month free not available for users who have already tried Premium.</span>
+            <span className="noline"> 1 month free not available for users who have already tried Premium.</span>
+            
         </p>
     )
 }
