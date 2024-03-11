@@ -1,0 +1,33 @@
+.premium{
+    padding: var(--main-padding);
+    text-align: center;
+    height: 571.3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* @media (max-width:775px) {
+    .optionsList{
+       wr: wrap !important;
+    }
+} */
+.optionsList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.optionsList div{
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    gap: 30px;
+}
+.image{
+    height: 142px;
+    width: 142px;
+}

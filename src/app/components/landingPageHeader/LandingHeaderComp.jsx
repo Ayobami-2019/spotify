@@ -1,30 +1,11 @@
-import spotifywhite from '../../assets/images/spotify-white.png'
-import spotifyblack from '../../assets/images/spotify-black.png'
-import {ReactComponent} from '../../assets/images/Frame.svg'  //anoter name other than ReactComponenr will not work
+import React from "react"
 
-export const Logo= (props)=>{
-    if(props.useWhite){
-        return(
-            <a href="#dashboard">
-                {/* <img src={spotifywhite} /> */}
-                <ReactComponent />
-            </a>
-            
-            
-        )
-    } else{
-        return(
-            <a href="#dashboard">
-                <img src={spotifyblack} />
-            </a>
-        )
-    }
-}
 
-export const Menu=()=>{
+
+export const Menu=(props)=>{
+    
     return(
-        <div className="menu">
-            <ul>
+            <ul className={props.className}>
                 <li>
                     <a href="#premium">Premium</a>
                 </li>
@@ -34,7 +15,7 @@ export const Menu=()=>{
                 <li>
                     <a href="#download">Download</a>
                 </li>
-                <li>|</li>
+                <li className="hidden">|</li>
                 <li className='sign'>
                     <a href="#singup">Sign Up</a>
                 </li>
@@ -42,7 +23,5 @@ export const Menu=()=>{
                     <a href="#login">Login</a>
                 </li>
             </ul>
-                
-        </div>
     )
 }

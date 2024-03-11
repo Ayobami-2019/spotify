@@ -13,16 +13,56 @@
 .menu ul{
     display: flex;
     flex-direction: row;
+    align-items: center;
     list-style: none;
     gap: 30px;
     font-weight: bold;
 }
-
+.menuIcon{
+    display: none;
+}
+/* @media (max-width: 750px) {
+    .menu ul{
+        gap: 0.01em;
+    }
+    .menu ul li, .menu ul li a{
+        font-size: 12px;
+    }
+} */
+@media (max-width: 825px) {
+    /* .menu{
+        position: relative;
+    } */
+    .menu ul{
+        display: none;
+        /* display: block; */
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        right: 0;
+        background-color: #000000;
+        cursor: pointer;
+    }
+    /* .menu ul{
+        
+    } */
+    ul.mobile{
+        display: block;
+    }
+    .menuIcon{
+        display: block;
+    }
+    li.hidden{
+        display: none !important;
+    }
+}
 .menu ul li, .menu ul li a{
     text-decoration: none;
     color: #ffffff;
     font-size: 15px;
     padding: 9px;
+    /* text-align: center; */
+    display: flex;
 }
 .sign{
     color: #D9DADC;

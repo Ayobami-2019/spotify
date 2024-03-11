@@ -1,30 +1,27 @@
+
+import React from 'react'
 import './LandingPageHeader.css'
-import { Logo, Menu } from './LandingHeaderComp'
-// import React from 'react' class LandingPageHeaderComponent extends React.Component or import {Component} from 'react'  //used when class is to be used
-//named component with arrow function (Arrow method)
+import {Menu } from './LandingHeaderComp'
+import { Logo } from '../Logo/Logo'
+import {ReactComponent as MenuIcon} from '../../assets/icons/menu.svg'
+
 export const LandingPageHeader=()=>{
+    const [showMenu, setMenu] =React.useState(false)
+    const toggleMenu=()=>{
+        setMenu(showMenu===false)
+    }
     return (
         <header className="header">
             <div className="logo">
                 <Logo useWhite={true}/>
             </div>
-            <div className="menu">
-                <Menu />
+            
+            
+            <div className="menu" >
+                <MenuIcon fill='#ffffff' onClick={toggleMenu} className='menuIcon'/> 
+                <Menu className={showMenu ? "mobile" : ""}/>
             </div>
         </header>
     )
 }
 
-/* // if it were to be a class instead of function for named component
-export class LandingPageHeader extends Component{
-    //note render is now a method as in method in class
-    //if this keyword will be used then constructor will be reeclared, thus the use of constructor and super(fundamental of class)
-    render(){
-        return(
-            <header className="header">
-                <div className="logo">Logo</div>
-                <div className="menu"></div>
-            </header>
-        )
-    }
-} */

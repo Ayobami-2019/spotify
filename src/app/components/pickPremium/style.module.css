@@ -1,0 +1,78 @@
+.pickPremium{
+    height: 977.16px;
+    background: #EFEFEF;
+    padding: var(--main-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+.pickPremiumIntro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.paymentMethods{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.premiumOptions{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.planFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px;
+    padding: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.planOption{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 269px;
+    box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    justify-content: space-between;
+    height: 272px;
+    border-bottom: 2px solid rgb(83, 83, 83, 0.3);
+    padding: 0 15px;
+    /* border-top: 2px solid #535353; */
+    
+}
+.featuresDiv{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 20px;
+    border-top: 2px solid rgb(83, 83, 83, 0.3);
+    
+}
+.feature{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    
+}
+.terms{
+    padding: 0 15px 15px 15px;
+}
