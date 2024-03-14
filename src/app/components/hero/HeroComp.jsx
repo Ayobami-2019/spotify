@@ -15,14 +15,14 @@ export const HeroButton=(props)=>{
         outline: "nofill",
         secondary: "nofill black"
     }
-    const className=classNames[props.type] || classNames.primary
+    const minee=classNames[props.type] || classNames.primary
     // const className1="green"
     return(
         // props.onClick ? <button className={className}>{props.title}</button> 
         // : 
         // <a href='#' className={className}>{props.title}</a>
         // )
-       <button className={className}>{props.title}</button> 
+       <button className={minee}>{props.title}</button> 
         )
     
 }

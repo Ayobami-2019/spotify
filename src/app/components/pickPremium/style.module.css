@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 50px;
 }
 .pickPremiumIntro{
@@ -14,17 +15,27 @@
     align-items: center;
     gap: 20px;
 }
-.paymentMethods{
+/* .paymentMethods{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
+} */
+.intro{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.intro h3{
+    font-size: 23px;
+    font-weight: bold;
 }
 .premiumOptions{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    /* align-items: center; */
-    justify-content: space-between;
+    gap: 16px;
 }
 .planFooter{
     display: flex;
@@ -33,36 +44,50 @@
     gap: 20px;
     align-items: center;
     background: #ffffff;
-    box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px; */
     padding: 10px;
     width: fit-content;
     margin: 0 auto;
     border-radius: 10px;
+    box-shadow: 0 0 8px 0;
 }
 .planOption{
-    gap: 20px;
+    
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 269px;
-    box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px;
+    background: #ffffff;
+    box-shadow: 0 0 8px 0;
+    border-radius: 10px;
+    /* gap: 16px; */
+    /* height: 555px; */
+    /* border-radius: 0 0 10px 10px; */
+    
 }
 
 .features{
     display: flex;
     flex-direction: column;
     /* gap: 20px; */
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 272px;
-    border-bottom: 2px solid rgb(83, 83, 83, 0.3);
+    /* border-bottom: 2px solid rgb(83, 83, 83, 0.3); */
+    /* box-shadow: 0 -9px 0 0; */
     padding: 0 15px;
+    height: 100%;
+    /* position: relative; */
+    /* align-items: baseline; */
     /* border-top: 2px solid #535353; */
     
 }
 .featuresDiv{
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
+    padding-top: 15px;
     gap: 20px;
+    height: 224px;
+    /* justify-self: flex-end; */
     border-top: 2px solid rgb(83, 83, 83, 0.3);
     
 }
@@ -74,5 +99,33 @@
     
 }
 .terms{
-    padding: 0 15px 15px 15px;
+    padding: 20px 15px;
+    box-shadow: 0 0 8px 0;
+    border-radius: 0 0 10px 10px;
+    
+}
+.Button{
+    
+    display: flex;
+    justify-content: center;
+    /* position: absolute;
+    bottom: 0; */
+}
+.free{
+    background: #0D72EA;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 5px 11.08px 6px 8px;
+    width: fit-content;
+}
+.one-time{
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #0D72EA;
+    color: #0D72EA;
+    border-radius: 4px;
+    width: fit-content;
+    padding: 6px 8.23px 6px 9px;
 }
