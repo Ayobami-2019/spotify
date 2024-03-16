@@ -37,8 +37,7 @@ export const PricingCardItem=(props)=>{
         
             <div className={style.planOption}>
                 <div className={style.intro}>
-                    {props.free && 
-                    <span className={style.free}>1 month free</span>}
+                    {props.free && <span className={style.free}>1 month free</span>}
                     <span className={style['one-time']}>One-time plans available</span>
                     <h3>{props.planName}</h3>
                     <p className='p-sixteen'>{props.price}</p>
@@ -48,7 +47,7 @@ export const PricingCardItem=(props)=>{
                 <div className={style.features}>
                     <ul className={style.featuresDiv}>
                         {
-                            props.features && props.features.map((feature)=>
+                            props.features.map((feature)=>
                                 <li className={style.feature}>
                                     <img className={style.image} src={Check} alt="" />
                                     <p className='p-sixteen'>{feature}</p>

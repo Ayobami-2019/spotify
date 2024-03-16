@@ -5,6 +5,7 @@ import {LandingPageHeader} from './components/landingPageHeader/LandingPageHeade
 import { Hero } from './components/hero/Hero';
 import { Premium } from './components/premium';
 import { PickPremium } from './components/pickPremium';
+import { Footer} from './components/footer';
 // import { Logo } from './components/Logo'
 
 export function App() {
@@ -14,6 +15,7 @@ export function App() {
       <Hero/>
       <Premium/>
       <PickPremium/>
+      <Footer/>
     </div>
   );
 }
