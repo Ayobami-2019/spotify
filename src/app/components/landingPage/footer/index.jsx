@@ -1,6 +1,7 @@
-import { Logo } from '../Logo/Logo'
+
+import { Logo } from '../../Logo/Logo.jsx'
 import style from './style.module.css'
-import {Navigation, SocialLinks, Footerfooter} from './footerComp'
+import {Navigation, SocialLinks, Footerfooter} from './footerComp.jsx'
 import {navList} from './data.js'
 
 export const Footer=()=>{

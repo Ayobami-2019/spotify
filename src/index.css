@@ -1,15 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+
 body {
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
+
     font-family: Helvetica;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: #000000;
-  color: #b3b3b3; */
+    
+  /*color: #b3b3b3; */
 }
-
+p, h3{
+  margin: 0;
+  padding: 0;
+}
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -28,6 +37,14 @@ body {
     --main-padding: 0 5%;
   }
 }
+/* @media (max-width: 450px) {
+    .fill, .nofill{
+      padding: 5px 10px !important;
+      gap: 0 !important;
+      background-color: red;
+    }
+    
+} */
 .fill, .nofill{
   padding: 16px 35px;
   border-radius: 500px;
@@ -52,6 +69,7 @@ body {
     font-weight: bold;
     /* margin-bottom: 50px; */
 }
+
 .h6-bold{
   font-size: 20px;
   font-weight: bold;
@@ -66,23 +84,29 @@ body {
   flex-direction: row;
   justify-content: center;
 }
-.terms a{
+.terms a, .underline{
   /* text-decoration: underline; */
   position: relative;
   z-index: 1;
   cursor: pointer;
 }
-.terms a::after{
+.underline{
+  text-decoration: none;
+}
+.terms a::after, .underline::after{
   content: '''';
   position: absolute;
   width: 143px;
   /* width: 133.4px; */
   border-bottom: #000000 solid 0.54px;
   z-index: 2;
-  left: 2px;
+  left: 1px;
   top: 12px;
 }
-
+.underline::after{
+  top: 15px;
+  width: 155px;
+}
 .terms .white::after{
   border-bottom: #ffffff solid 0.54px;
 }

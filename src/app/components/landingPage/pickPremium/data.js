@@ -1,9 +1,11 @@
-import {ReactComponent as Lipi} from '../../assets/images/lip.svg'
-import {ReactComponent as Paytm} from '../../assets/images/paytm.svg'
-import {ReactComponent as Visa} from '../../assets/images/visa.svg'
-import {ReactComponent as Mastercard} from '../../assets/images/mastercard.svg'
-import {ReactComponent as Amex} from '../../assets/images/amex.svg'
-import {ReactComponent as Dinnersclub} from '../../assets/images/dinnersclub.svg'
+import {ReactComponent as Lipi} from '../../../assets/images/lip.svg'
+import {ReactComponent as Paytm} from '../../../assets/images/paytm.svg'
+import {ReactComponent as Visa} from '../../../assets/images/visa.svg'
+import {ReactComponent as Mastercard} from '../../../assets/images/mastercard.svg'
+import {ReactComponent as Amex} from '../../../assets/images/amex.svg'
+import {ReactComponent as Dinnersclub} from '../../../assets/images/dinnersclub.svg'
+import { Terms } from '../../terms'
+import style from "./style.module.css" 
 
 export const paymentMethods=[
     {
@@ -37,10 +39,11 @@ export const pricingList=[
             "Group Session",
             "Download 30 songs on 1 mobile device",
             // <Terms type='black' className='just-be'/>
-        ]
+        ],
+        terms: <Terms type='black' className={style.noCondition}/>
     },
     {
-        free: "",
+        free: " month free",
         planName: "Individual",
         price: "₹119/month after offer period",
         account: "1 account",
@@ -49,7 +52,8 @@ export const pricingList=[
             "Group Session",
             "Download 10k songs/device on 5 devices",
             // <Terms type='black'/>
-       ]
+       ],
+       terms: <Terms type='black' className=""/>
     },
     {
         free: "1 month free",
@@ -62,7 +66,8 @@ export const pricingList=[
              "Group Session",
             "Download 10k songs/device, on 5 devices per account",
             // <Terms type='black'/>
-       ]
+       ],
+       terms: <Terms type='black'/>
     },
     {
         free: "1 month free",
@@ -76,6 +81,7 @@ export const pricingList=[
             "Group Session",
             "Download 10k songs/device on 5 devices",
             // <Terms type='black'/>
-        ]
+        ],
+        terms: <Terms type='black'/>
     }
 ]

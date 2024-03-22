@@ -1,6 +1,6 @@
 import style from './style.module.css'
 import { PaymentMethods, PricingCardItem} from './PickPremiumComp'
-import { HeroButton } from '../hero/HeroComp'
+import { MyButton } from '../../button'
 import {pricingList} from './data'
 
 export const PickPremium=()=>{
@@ -28,7 +28,7 @@ export const PickPremium=()=>{
             
             <div className={style.planFooter}>
                 <h3>Special discount for eligible students in university</h3>
-                <HeroButton type='secondary' title='LEARN MORE'/>
+                <MyButton type='secondary' title='LEARN MORE'/>
             </div>
         </section>
     )

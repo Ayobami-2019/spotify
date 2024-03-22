@@ -1,10 +1,12 @@
 .premium{
     padding: var(--main-padding);
     text-align: center;
-    height: 571.3px;
+    /* height: 571.3px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 69px;
+    padding: 50px 0;
 }
 /* @media (max-width:775px) {
     .optionsList{
@@ -14,20 +16,28 @@
 .optionsList{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
-    margin-top: 50px;
+    flex-wrap: wrap;
 }
 .optionsList div{
     width: 285px;
     display: flex;
+    
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 40px;
-    gap: 30px;
+    
+    gap: 40px;
+}
+.optionsList div h3{
+    margin-bottom: 11px !important;
+}
+.optionsList div p{
+    padding: 0 30px;
 }
 .image{
+    /* margin-bottom: 40px; */
     height: 142px;
     width: 142px;
 }

@@ -1,7 +1,7 @@
-import Adfree from '../../assets/images/adfree.png'
-import OfflinePlay from '../../assets/images/offlineplay.png'
-import PlayEverywhere from '../../assets/images/playeverywhere.png'
-import Pay from '../../assets/images/payplay.svg'
+import Adfree from '../../../assets/images/adfree.png'
+import OfflinePlay from '../../../assets/images/offlineplay.png'
+import PlayEverywhere from '../../../assets/images/playeverywhere.png'
+import Pay from '../../../assets/images/payplay.svg'
 
 
 // const playOptions=[1,2,3,4]

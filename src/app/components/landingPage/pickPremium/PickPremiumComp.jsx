@@ -1,8 +1,8 @@
 import style from './style.module.css'
-import Check from '../../assets/images/check.png'
-import { Terms } from '../hero/HeroComp'
-import { HeroButton } from '../hero/HeroComp'
-import { paymentMethods} from './data'
+import Check from '../../../assets/images/check.png'
+import { Terms } from '../../terms' 
+import { paymentMethods, pricingList} from './data'
+import { MyButton } from '../../button'
 
 // export const PaymentMethods=()=>{
 //     return(
@@ -56,11 +56,11 @@ export const PricingCardItem=(props)=>{
                         }
                     </ul>
                     <div className={style.Button}>
-                        <HeroButton type='primary' title='VIEW PLANS'/>
+                        <MyButton type='primary' title='VIEW PLANS'/>
                     </div>
                 </div>
                 <p className={style.terms}>
-                    <Terms type='black'/>
+                    {props.terms}
                 </p>
             </div>
 )}

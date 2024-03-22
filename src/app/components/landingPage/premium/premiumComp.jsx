@@ -10,7 +10,7 @@ export const PlayOptions=()=>{
             {playOptions.map((playOptions)=>(
                 <div>
                     <img className={style.image} src={playOptions.image} alt="" />
-                    <h6 className='h6-bold'>{playOptions.title}</h6>
+                    <h3 className='h6-bold'>{playOptions.title}</h3>
                     <p className='p-sixteen'>{playOptions.description}</p>
                 </div>
             ))}

@@ -1,23 +1,30 @@
-import logo from '../logo.svg';
-import './App.css';
-import './money.css'
-import {LandingPageHeader} from './components/landingPageHeader/LandingPageHeader'
-import { Hero } from './components/hero/Hero';
-import { Premium } from './components/premium';
-import { PickPremium } from './components/pickPremium';
-import { Footer} from './components/footer';
-// import { Logo } from './components/Logo'
 
-export function App() {
-  return (
-    <div>
-      <LandingPageHeader/>
-      <Hero/>
-      <Premium/>
-      <PickPremium/>
-      <Footer/>
-    </div>
-  );
+import React from 'react';
+
+import { LandingPage } from './pages/Landing/index';
+import { LoginPage } from './pages/login/index';
+// import {Login}
+import { useNavigation } from './hooks/useNavigation';
+
+export default function App() {
+  const [url]= useNavigation()
+  switch (url){
+    case '/login':
+      return <LoginPage/>
+    default: 
+      return <LandingPage/>
+      break;
+  }
 }
+//   useNavigation()
+//   return (
+//     <div>
+      
+//       <LoginPage/>
+//       <LandingPage/>
+//     </div>
+//   );
+// }
 
-export default App;
+// export default App;
+{/* <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet"> */}
