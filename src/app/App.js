@@ -1,6 +1,5 @@
 
 import React from 'react';
-
 import { LandingPage } from './pages/Landing/index';
 import { LoginPage } from './pages/login/index';
 // import {Login}
