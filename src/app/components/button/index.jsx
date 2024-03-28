@@ -1,4 +1,5 @@
 import {combinedClasses} from '../../../utilis/format'
+import style from './style.module.css'
 
 export const MyButton=(props)=>{
     const classNames={
@@ -14,6 +15,9 @@ export const MyButton=(props)=>{
         // : 
         // <a href='#' className={className}>{props.title}</a>
         // )
+        props.onClick ?
+        <button {...props} className={combineClass} >{props.title || props.children}</button> :
+
        <button className={combineClass}>{props.title || props.children}</button> 
         )
 }

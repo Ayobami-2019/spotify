@@ -19,7 +19,7 @@ export const Menu=(props)=>{
                     <a href="#singup">Sign Up</a>
                 </li>
                 <li className='sign'>
-                    <a href="#/login">Login</a>
+                    <a href="/login">Login</a>
                 </li>
             </ul>
     )
